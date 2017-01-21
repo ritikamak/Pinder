@@ -75,7 +75,7 @@ a:hover, a:focus, a:active, a.active {
 }
 #qty {
   border: none;
-  margin-top: 0px;
+  margin-top: 7px;
   width: 70px;
   font-weight: 700;
 }
