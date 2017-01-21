@@ -10,6 +10,7 @@
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="css/pinder-boards.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
@@ -36,20 +37,26 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="team-member">
+                      <a href="">
                         <img src="img/team/kitchenware.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Kitchenware</h4>
+                      </a>
+                      <h4>Kitchenware</h4>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
+                      <a href="">
                         <img src="img/team/winterapparel.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Women's Outerwear</h4>
+                      </a>
+                      <h4>Women's Outerwear</h4>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
+                      <a href="">
                         <img src="img/team/boots.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Women's Boots</h4>
+                      </a>
+                      <h4>Women's Boots</h4>
                     </div>
                 </div>
             </div>
@@ -78,5 +85,16 @@
 
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAzgDLUbaN731nHMPIGd96f7QSY5unzc5g",
+      authDomain: "she-innovates.firebaseapp.com",
+      databaseURL: "https://she-innovates.firebaseio.com",
+      storageBucket: "she-innovates.appspot.com",
+      messagingSenderId: "751801012241"
+    };
+    firebase.initializeApp(config);
+  </script>
 </body>
 </html>
