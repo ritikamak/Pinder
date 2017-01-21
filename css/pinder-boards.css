@@ -716,6 +716,7 @@ p {
     font-weight: 700;
     border-radius: 3px;
     font-size: 15px;
+    text-decoration: none; 
     /* padding: 20px 40px; */
 }
 .btn-pinder {
