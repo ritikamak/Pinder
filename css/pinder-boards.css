@@ -742,6 +742,7 @@ p {
 }
 a {
     color: #85E6BC;
+    text-decoration: none;
 }
 a, a:hover, a:focus, a:active, a.active {
     outline: none;
