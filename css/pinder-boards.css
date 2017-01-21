@@ -48,9 +48,6 @@ a:hover, a:focus, a:active, a.active {
     color: white;
 }
 /* top nav bar *****************************************************************/
-nav {
-  display: block;
-}
 #container1 {
   height: 60px;
   width: 100%;
