@@ -249,6 +249,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*******************************************************************************/
 /********************************** TEAM PAGE **********************************/
 /*******************************************************************************/
+
+/* pics of each board **********************************************************/
+.team-member {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.team-member img {
+  margin: 0 auto;
+  border: 7px solid white;
+  opacity: 0.5;
+}
+.team-member img:hover {
+  opacity: 1.0;
+}
+.team-member h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  color: #767676;
+}
+.team-member p {
+  margin-top: 0;
+}
+.img-circle {
+  border-radius: 50%;
+}
+/* background **********************************************************/
 .bg-light-gray {
     background-color: #eeeeee;
 }
@@ -291,6 +317,8 @@ h2 {
     -webkit-margin-after: 0.83em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
+    font-weight: 500;
+    line-height: 1.1;
 }
 h3 {
   margin-top: 20px;
