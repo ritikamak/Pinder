@@ -28,25 +28,18 @@
 
   <!-- Game -->
   <section id="back" class="bg-light-gray">
-        
-<div id = "item-image">
-      <!-- <img src = " "/> -->
+    <div id = "item-image">
 			<div id = "description"></div>
-		
-			<div id="wrapper">
-
-	  		<h1 id="header">is the price right?</h1>
-				
+			<div id="wrapper">				
 				<div id = "description"></div>
-				
 				<div id="preview">
-						<img id = 'productImage1' class="preview">
-					</div>
-	</div>
-
-
-</div>
-</section>
+					<img id = 'productImage1' class="preview">
+				</div>
+				<div style = "position: absolute; margin-left: -100px; font-size: 30px" id="price">$<span id="range">10</span>
+        </div>
+      </div>
+    </div>
+  </section>
   
   <!-- Footer -->
   <footer>
@@ -64,7 +57,12 @@
       </div>
     </div>
   </footer>
-
+	<script type="text/javascript">
+	function showValue(newValue)
+	{
+ 	 document.getElementById("range").innerHTML=newValue;
+	}
+</script>
 	<script src="js/kitchen.js"></script>
 	<script src="js/game.js"></script>
 			<script>
