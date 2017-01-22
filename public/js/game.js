@@ -1,13 +1,10 @@
-document.getElementById("preview").style.display = 'none';
-document.getElementById('description').style.display = 'none';
-
+questionApp();
+document.getElementById("header").className = "appear";
 function questionApp() {
   var score = 0;
   var currentQuestion = 1;
   var questionCount = Questions.question.length;
   var wrapper = document.getElementById("wrapper");
-  var start = document.getElementById("start");
-  start.setAttribute("disabled","disabled");
 
   
   function checkAnswer(question, userAnswer, button) {
@@ -75,8 +72,7 @@ function questionApp() {
 
 		document.getElementById('description').innerHTML = "<h1>" + selectedQuestion.question + "</h1><p>" + selectedQuestion.description + "</p></div>";
     var questionDiv = document.createElement("div");
-    //questionDiv.setAttribute("id", "question" + currentQuestion);
-    //var questionTitle = document.createElement("h2");
+
 		var slider = document.createElement("div");
 		slider.innerHTML = "<div class='sliderthumb id='sliderthumb1'></div>";
     var priceGuess = document.createElement("input");
@@ -86,7 +82,6 @@ function questionApp() {
 		priceGuess.setAttribute("value", "10");
 		priceGuess.setAttribute("step", "5");
 		priceGuess.setAttribute("oninput", "showValue(this.value)");
-		priceGuess.setAttribute("onchange", "showValue(this.value)");
 		
 		var sliderValue = document.createElement("span");
 		priceGuess.appendChild(sliderValue);
@@ -94,8 +89,7 @@ function questionApp() {
     wrapper.appendChild(questionDiv);
 		questionDiv.appendChild(slider);
 		slider.appendChild(priceGuess);
-    //questionDiv.appendChild(questionTitle);
-    //questionTitle.innerHTML = "Question " + currentQuestion + ": " + selectedQuestion.question;
+
     questionDiv.appendChild(priceGuess);
     var image1 = document.getElementById('productImage1');
 		image1.setAttribute('src', "img/game/" + selectedQuestion.question + "1.jpg");
@@ -103,38 +97,19 @@ function questionApp() {
 		image2.setAttribute('src', "img/game/" + selectedQuestion.question + "2.jpg");
     var image3 = document.getElementById('productImage3');
 		image3.setAttribute('src', "img/game/" + selectedQuestion.question + "3.jpg");
-    /**
-    for(j = 0;j <= 5; j++) {
-			var radio = document.createElement(label);
-      var choice = "selectedQuestion.choice" + j;
-      var choiceOption = document.createElement("input");
-			choiceOption.setAttribute("type", "radio");
-			choiceOption.setAttribute("name", "price");
-      choiceOption.setAttribute("value", "choice" + j);
-      choiceOption.innerHTML = eval(choice);
-			var pin = document.createElement("img");
-			pin.setAttribute('src', "img/game/pin" + j + ".png");
-			pin.style.width = '40px';
-			pin.style.height = '60px';
-      radio.appendChild(choiceOption);
-			radio.appendChild(pin);
-			priceGuess.appendChild(radio);
-    }
-**/
+
 		
     
     var button = document.createElement("button");
     questionDiv.appendChild(button);
-    var label = document.createTextNode("Input answer!");
+    var label = document.createTextNode("Guess the price!");
     button.appendChild(label);
     button.setAttribute("id", "button" + currentQuestion);
 		
 		var modal = document.getElementById('productInfo');
 		var span = document.getElementsByClassName("close")[0];
 
-//		button.onclick = function() {
-//		    modal.style.display = "block";
-//		}
+
     questionDiv.className = "appear";
 		document.getElementById("preview").className = "appear";
 		document.getElementById("description").className = "appear";

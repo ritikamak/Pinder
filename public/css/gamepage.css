@@ -230,11 +230,13 @@ h1 {
 #description h1 {
 	font-family:'Lato', sans-serif;
   text-align: left;
+	margin-left: 10px;
   font-size: 4rem;
   padding: 12rem 0 0 1rem;
 }
 
 #score {
+	width: 500px;
 	z-index: 2;
 }
 
@@ -280,12 +282,16 @@ h1 {
 }
 
 div button {
-  height: 2.2rem;
+	font-family: helvetica;
+	font-size: 20px;
+	font-weight: bold;
+	font-color: #45FEAE;
+	font-border: 1px black solid;
+  height: 3rem;
   border: 0;
   background-color: #ccc;
-  background: linear-gradient(#ccc,#666);
-  box-shadow: 1px 1px 1px black; 
-  border-radius: 7px 0px;
+  background: linear-gradient(goldenrod,orange);
+  border-radius: 7px;
 }
 
 @media all and (max-width: 500px) {
