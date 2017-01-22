@@ -214,7 +214,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .btn-xl-pinder {
   color: #717171;
   background-color: #E9E9E9;
-  border-color: #2A2626;
+  border-color: #E9E9E9;
+  border: none;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
