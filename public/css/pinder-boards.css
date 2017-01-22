@@ -91,7 +91,8 @@ a:hover, a:focus, a:active, a.active {
 }
 #qty {
   border: none;
-  margin-top: 7px;
+  margin-top: 5.5px;
+  margin-left: -20px;
   width: 70px;
   font-weight: 700;
 }
