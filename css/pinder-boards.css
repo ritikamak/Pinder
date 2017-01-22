@@ -38,7 +38,7 @@ body {
 *:before, *:after {
   box-sizing: border-box;
 }
-/* links/buttons/hrefs **********************************************************/
+/* links/buttons/hrefs *********/
 a {
     color: #85E6BC;
     text-decoration: none;
@@ -47,7 +47,7 @@ a:hover, a:focus, a:active, a.active {
     outline: none;
     color: white;
 }
-/* top nav bar *****************************************************************/
+/* top nav bar *****************/
 #container1 {
   height: 60px;
   width: 100%;
@@ -79,7 +79,7 @@ a:hover, a:focus, a:active, a.active {
   width: 70px;
   font-weight: 700;
 }
-/* footer **********************************************************************/
+/* footer **********************/
 footer {
   background: black;
   text-align: center;
@@ -119,8 +119,6 @@ ul {
 p {
   margin: 0 0 13px;
 }
-
-
 /*******************************************************************************/
 /********************************** BOOTSTRAP **********************************/
 /*******************************************************************************/
@@ -168,8 +166,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-right: auto;
   margin-left: auto;
 }
-
-
 /*******************************************************************************/
 /********************************** HOME PAGE **********************************/
 /*******************************************************************************/
@@ -199,7 +195,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: Rez;
   margin-left: 25px;
 }
-
+.header .text-vertical-center h4 {
+  font-weight: 500;
+  color: #2A2626;
+  font-size: 30px;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+}
 .header .intro-h3 {
   margin-top: -150px;
   font-weight: 500;
@@ -208,7 +210,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-align: center;
 }
-/* 'begin playing' button ******************************************************/
+/* 'begin playing' button ******/
 .btn-xl-pinder {
     color: #717171;
     background-color: #E9E9E9;
@@ -241,16 +243,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border: 1px solid transparent;
     border-radius: 4px;
 }
-
+/*******************************************************************************/
 /*************************************LOGIN*************************************/
-
-
-
+/*******************************************************************************/
+fieldset {
+    border: 0;
+}
 /*******************************************************************************/
 /********************************** TEAM PAGE **********************************/
 /*******************************************************************************/
-
-/* pics of each board **********************************************************/
+/* pics of each board **********/
 .team-member {
   text-align: center;
   margin-bottom: 50px;
@@ -274,7 +276,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .img-circle {
   border-radius: 50%;
 }
-/* background **********************************************************/
+/* background ******************/
 .bg-light-gray {
     background-color: #eeeeee;
 }
@@ -343,12 +345,11 @@ section h3.section-subheading {
 /*******************************************************************************/
 /********************************** GAME PAGE **********************************/
 /*******************************************************************************/
-
 .item-image {
 
 }
 
-/* images **********************************************************************/
+/* images **********************/
 img {
   vertical-align: middle;
   border: 0;
