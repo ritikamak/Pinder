@@ -88,11 +88,7 @@ function questionApp() {
     var button = document.createElement("button");
     questionDiv.appendChild(button);
     var label = document.createTextNode(" Guess");
-		var icon = document.createElement("i");
-		icon.setAttribute("class", "fa fa-money");
-		icon.setAttribute("aria-hidden", "true");
-		icon.appendChild(label);
-    button.appendChild(icon);
+    button.appendChild(label);
     button.setAttribute("id", "button" + currentQuestion);
 		
 		var modal = document.getElementById('productInfo');
