@@ -9,8 +9,7 @@
   <title>Pinder</title>
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="css/pinder-boards.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">\
-  <script src="/js/auth.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
 </head>
 <body>
 
@@ -26,13 +25,13 @@
       <h1>pinder</h1>
       <p class="intro-h3">Is the price right?</p>
       <!--login button-->
-      <form id="entirePage" name="loginForm" onsubmit="toLogin();">
+      <form id="entirePage" name="loginForm" onsubmit="return validateFullForm()">
         <fieldset id="fieldsetOne">
           <input style = "margin-top: -200px; text-align: center; border-radius: 4px; border: solid 2px;"type="text" placeholder="Enter Username" name="uname" required>
           <br>
           <input style = "text-align: center; border-radius: 4px; border: solid 2px;" type="password" placeholder="Enter Password" name="psw" required>
         </fieldset>
-        <button type="submit" onclick="toLogin();">Login</button>
+        <button type="submit" onclick="return validateFormOne()">Login</button>
       </form>
     </div>
   </header>
@@ -70,7 +69,7 @@
     };
     firebase.initializeApp(config);
   </script>
-  <!--<script>
+  <!-- <script>
     function validateFormOne() {
       var xFirst = document.forms["loginForm"]["uname"].value;
       var yFirst = document.forms["loginForm"]["psw"].value;
