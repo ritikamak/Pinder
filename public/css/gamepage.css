@@ -3,50 +3,55 @@
   src: url(../fonts/REZ.ttf);
 }
 input[type=range] {
-  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
-  width: 100%; /* Specific width is required for Firefox. */
-  background: transparent; /* Otherwise white in Chrome */
-}
-
-input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
-}
-
-input[type=range]:focus {
-  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
-}
-
-input[type=range]::-ms-track {
+  margin: 10px 0;
   width: 100%;
-  cursor: pointer;
-
-  /* Hides the slider so custom styles can be added */
-  background: transparent; 
-  border-color: transparent;
-  color: transparent;
 }
-
+input[type=range]:focus {
+  outline: none;
+}
 input[type=range]::-webkit-slider-runnable-track {
-    width: 100;
-    height: 5px;
-    background: #ddd;
-    border: none;
-    border-radius: 3px;
-		margin-bottom: 30px;
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #fcdc3c;
+  border-radius: 25px;
+  border: 0px solid #000101;
 }
-
 input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    border: none;
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    background: goldenrod;
-    margin-top: -4px;
-		margin-bottom: 30px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 20px;
+  border-radius: 7px;
+  background: #70bf83;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: 0px;
 }
-
-
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #fcdc3c;
+}
+input[type=range]::-ms-fill-lower {
+  background: #fcdc3c;
+  border: 0px solid #000101;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: #fcdc3c;
+  border: 0px solid #000101;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #fcdc3c;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #fcdc3c;
+}
 body {
 	height: 100%;
 }
@@ -95,11 +100,11 @@ margin-top: 5px;
 }
 
 .normal {
-border:3px solid #000000;
+border:3px solid #70bf83;
 }
 
 .selected {
-border:3px solid #ff0000;
+border:3px solid #fcdc3c;
 }
 
 
@@ -209,7 +214,9 @@ html {
 
 	  
 #wrapper #score {
-  height: 480px;
+	top: 30%;
+  height: 250px;
+	width: 100%;
   background-color: rgba(255,255,255,1);
   border-radius: 7px;
   box-shadow: 5px 5px 10px black,
@@ -221,11 +228,12 @@ html {
 h1 {
 	font-family: Rez;
 	letter-spacing: 3px;
-  color: #040707;
+  color: #70bf83;
   font-size: 5rem;
   text-align: right;
 	margin-bottom: 3px;
 }
+
 
 #description h1 {
 	font-family:'Lato', sans-serif;
@@ -236,39 +244,18 @@ h1 {
 }
 
 #score {
-	width: 500px;
 	z-index: 2;
 }
 
 #score h1 {
 	font-family: 'Lato', sans-serif;
-  text-align: left;
-  font-size: 4rem;
+  text-align: center;
+  font-size: 3.5rem;
   padding: 12rem 0 0 1rem;
+	margin-top: -50px;
 }
 
 /* || buttons */
-	  
-#start,#reset {
-  width: 8em;
-  height: 3em;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border: 0;
-  border-radius: 7px 0px;
-  background-color: #ccc;
-  background: linear-gradient(#ccc,#666);
-  box-shadow: 1px 1px 1px black; 
-}
-
-#start:hover, #start:focus {
-  background-color: #ddd;
-}
-
-#start:active {
-  box-shadow: inset 1px 1px 5px black;
-}
 	  
 #prices, div button {
   width: 15em;
@@ -281,17 +268,26 @@ h1 {
   margin-right: 1rem;
 }
 
-div button {
-	font-family: helvetica;
-	font-size: 20px;
-	font-weight: bold;
-	font-color: #45FEAE;
-	font-border: 1px black solid;
-  height: 3rem;
-  border: 0;
-  background-color: #ccc;
-  background: linear-gradient(goldenrod,orange);
-  border-radius: 7px;
+
+button, div button {
+  -webkit-border-radius: 11;
+  -moz-border-radius: 11;
+  border-radius: 11px;
+  text-shadow: 1px 1px 3px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+	height: 35px;
+	width: 130px;
+  background: #a8e05e;
+  padding: 5px 20px 8px 20px;
+  border: solid #70bf83 2px;
+  text-decoration: none;
+}
+
+button, div button:hover {
+  background: #fcdc3c;
+  text-decoration: none;
 }
 
 @media all and (max-width: 500px) {
@@ -299,10 +295,7 @@ div button {
     width: 100%;
     min-width: 320px;
   }
-  
-  h1 {
-    font-size: 4rem;
-  }
+
   
   div div button, select {
     display: block;
