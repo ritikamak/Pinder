@@ -16,7 +16,7 @@ input[type=range]::-webkit-slider-runnable-track {
   cursor: pointer;
   animate: 0.2s;
   box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-  background: #fcdc3c;
+  background: #B6B6B6;
   border-radius: 25px;
   border: 0px solid #000101;
 }
@@ -26,31 +26,31 @@ input[type=range]::-webkit-slider-thumb {
   height: 20px;
   width: 20px;
   border-radius: 7px;
-  background: #70bf83;
+  background: #45FEAE;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: 0px;
 }
 input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #fcdc3c;
+  background: #B6B6B6;
 }
 input[type=range]::-ms-fill-lower {
-  background: #fcdc3c;
+  background: #B6B6B6;
   border: 0px solid #000101;
   border-radius: 50px;
   box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
 }
 input[type=range]::-ms-fill-upper {
-  background: #fcdc3c;
+  background: #B6B6B6;
   border: 0px solid #000101;
   border-radius: 50px;
   box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
 }
 input[type=range]:focus::-ms-fill-lower {
-  background: #fcdc3c;
+  background: #B6B6B6;
 }
 input[type=range]:focus::-ms-fill-upper {
-  background: #fcdc3c;
+  background: #B6B6B6;
 }
 body {
 	height: 100%;
@@ -147,27 +147,23 @@ html, body {
 	  
 html {
   background: white;
-  font-family: 'helvetica neue', sans-serif;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 10px;
 }
 	  
 #wrapper {
-  background-color: white;
+  background-color: #eeeeee;
+  /*background: transparent;*/
   width: 500px;
-	min-height: 800px;
-		padding: 15px 15px;
-		margin: 10px auto;
-		position: relative;
-		-webkit-box-shadow: 5px 5px 38px -2px rgba(0,0,0,0.55);
-		-moz-box-shadow: 5px 5px 38px -2px rgba(0,0,0,0.55);
-		box-shadow: 5px 5px 38px -2px rgba(0,0,0,0.55);
+  height: 700px;
+  margin: 0 auto;
+  position: relative;
 }
 	  
 	  
 #wrapper div {
 	width: 480px;
   position:absolute;
-  padding: 1rem;
   bottom: 0;
   left: 0;
   right: 0;
@@ -181,17 +177,20 @@ html {
 }
 
 #description {
-	font-family: 'Lato', sans-serif;
-	font-size: 16px;
-	position: absolute;
-	left: 50%;
-	margin-left: -250px;
-	top: 350px;
-	width: 500px;
-	height: 200px;
-	padding-top: 0px;
-	padding-right: 0px;
-	z-index: 1;
+  position: absolute;
+  left: 50%;
+  margin-left: -250px;
+  top: 400px;
+  width: 500px;
+  height: 200px;
+  padding-top: 0px;
+  padding-right: 0px;
+  z-index: 1;
+
+  font-size: 14px;
+  color: #2A2626;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
 }
 
 #description p {
@@ -207,27 +206,28 @@ html {
   background-color: rgba(255,255,255,1);
   border-radius: 7px;
   box-shadow: 5px 5px 10px black,
-              inset 5px 5px 20px rgba(255,255,255,0.8);
+  inset 5px 5px 20px rgba(255,255,255,0.8);
 }
 
 /* || typography */
 
-h1 {
-	font-family: Rez;
-	letter-spacing: 3px;
-  color: #70bf83;
-  font-size: 5rem;
+h1 {  /*names of items: Hoodie*/
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #2A2626;
+  font-size: 25px;
   text-align: right;
-	margin-bottom: 3px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  line-height: 1.1;
 }
 
 
 #description h1 {
-	font-family:'Lato', sans-serif;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-align: left;
-	margin-left: 10px;
-	margin-bottom: 0px;
-  font-size: 4rem;
+  margin-left: 10px;
+  font-size: 25px;
   padding: 12rem 0 0 1rem;
 }
 
@@ -236,17 +236,19 @@ h1 {
 }
 
 #score h1 {
-	font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-align: center;
   font-size: 3.5rem;
   padding: 12rem 0 0 1rem;
-	margin-top: -50px;
+  margin-top: -50px;
 }
 
 /* || buttons */
-	  
+    
 #prices, div button {
   width: 15em;
+  color: #45FEAE;
+  background-color: white;
 }
 
 #prices {
@@ -257,25 +259,35 @@ h1 {
 }
 
 
+/* guess button */
 button, div button {
-  -webkit-border-radius: 11;
-  -moz-border-radius: 11;
-  border-radius: 11px;
-  text-shadow: 1px 1px 3px #666666;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-	height: 35px;
-	width: 130px;
-  background: #a8e05e;
-  padding: 5px 20px 8px 20px;
-  border: solid #70bf83 2px;
+  color: #717171;
+  background-color: white;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
   text-decoration: none;
+  font-size: 15px;
+  line-height: 1.42857143;
+  margin-top: 10px;
+  white-space: nowrap;
+  display: inline-block;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 35px;
+  width: 100px;
+  padding: 5px 20px 8px 20px;*/
+  outline: none;
+  border: transparent;
 }
-
 button, div button:hover {
-  background: #fcdc3c;
-  text-decoration: none;
+  outline: none;
+  color: #45FEAE;
+  border: transparent;
 }
 
 @media all and (max-width: 500px) {
