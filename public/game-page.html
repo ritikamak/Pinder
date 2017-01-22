@@ -72,6 +72,21 @@
     </div>
   </footer>
 
+  <!-- FIREBASE -->
+
+<script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBd29ETHSAjpr43HjlDXLqt0leQJLK9Dfg",
+    authDomain: "pinder-1288b.firebaseapp.com",
+    databaseURL: "https://pinder-1288b.firebaseio.com",
+    storageBucket: "pinder-1288b.appspot.com",
+    messagingSenderId: "648120936098"
+  };
+  firebase.initializeApp(config);
+</script>
+
   <script>
       var lastImg = "productImage1"; //Set initial thumbnail and preview
       document.getElementById(0).src = document.getElementById(lastImg).src;
