@@ -52,6 +52,14 @@ input[type=range]:focus::-ms-fill-lower {
 input[type=range]:focus::-ms-fill-upper {
   background: #B6B6B6;
 }
+
+#header {
+	font-size: 30px;
+	text-align: center;
+	padding-right: 25px;
+	text-shadow: 2px 2px #B6B6B6;
+}
+
 body {
 	height: 100%;
 }
