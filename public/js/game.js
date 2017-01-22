@@ -67,7 +67,7 @@ function questionApp() {
   function generateQuestion() {
     var selectedQuestion = Questions.question[currentQuestion-1];
 
-		document.getElementById('description').innerHTML = "<h1>" + selectedQuestion.question + "</h1><p>" + selectedQuestion.description + "</p></div>";
+		document.getElementById('description').innerHTML = "<h1>" + selectedQuestion.itemName + "</h1><p>" + selectedQuestion.description + "</p></div>";
     var questionDiv = document.createElement("div");
 
     var priceGuess = document.createElement("input");
@@ -82,14 +82,8 @@ function questionApp() {
 		questionDiv.appendChild(priceGuess);
 
     var image1 = document.getElementById('productImage1');
-		image1.setAttribute('src', "img/game/" + selectedQuestion.question + "1.jpg");
-    var image2 = document.getElementById('productImage2');
-		image2.setAttribute('src', "img/game/" + selectedQuestion.question + "2.jpg");
-    var image3 = document.getElementById('productImage3');
-		image3.setAttribute('src', "img/game/" + selectedQuestion.question + "3.jpg");
+		image1.setAttribute('src', "img/game/" + selectedQuestion.question + "1.png");
 
-		
-    
     var button = document.createElement("button");
     questionDiv.appendChild(button);
     var label = document.createTextNode(" Guess");
@@ -114,6 +108,7 @@ function questionApp() {
 		var radios = document.getElementsByName('price');
 		
     button.addEventListener('click', function(){
+
 			checkAnswer(selectedQuestion, priceGuess.value, currentButton);
 			}, false);
   	}
