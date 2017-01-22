@@ -32,10 +32,12 @@ function questionApp() {
     button.setAttribute("disabled", "disabled"); 
     if (currentQuestion === questionCount) {
 			roundScore(correctAnswer);
+			showTotal(total);
       finalScore();
     } 
 		else {
 			roundScore(correctAnswer);
+			showTotal(total);
       var qDiv = wrapper.lastChild;
       qDiv.className = "disappear";
       currentQuestion++;
