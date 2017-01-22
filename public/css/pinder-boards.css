@@ -277,10 +277,10 @@ fieldset {
 .team-member img {
   margin: 0 auto;
   border: 7px solid white;
-  opacity: 0.5;
+  opacity: 1.0;
 }
 .team-member img:hover {
-  opacity: 1.0;
+  opacity: 0.5;
 }
 .team-member h4 {
   margin-top: 25px;
