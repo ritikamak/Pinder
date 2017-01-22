@@ -261,6 +261,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border: 1px solid transparent;
   border-radius: 4px;
 }
+
+#howToPlay {
+  background-color: #eeeeee;
+  height: 300px;
+  width: 600px;
+  margin-left: 19%;
+  margin-top: -20px;
+  border: solid 2px gray;
+}
+
+ 
+
+
+
+
 /*******************************************************************************/
 /*************************************LOGIN*************************************/
 /*******************************************************************************/
