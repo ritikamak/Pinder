@@ -6,10 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="author" content=""><link rel="stylesheet" href="css/gamepage.css" type="text/css" media="screen">
+  
   <title>Pinder</title>
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="css/pinder-boards.css" rel="stylesheet">
+	<link href="css/gamepage.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
 </head>
 <body>
@@ -30,18 +32,26 @@
       <!-- <img src = " "/> -->
     <div id = "description">
     </div>
-  
+	<div id="wrapper">
 
-  <input style = "margin-top: 100px; margin-left: 590px;"type="range" min="0" max="50" value="0" step="5" oninput="showValue(this.value)" />
+	  <button id="start" onClick="questionApp();">Start quiz</button>
 
-  <p style = "margin-left: 650px;">$<span id="range">0</span></p>
+	  <h1 id="header">is the price right?</h1>
 
-<script type="text/javascript">
-function showValue(newValue)
-{
-  document.getElementById("range").innerHTML=newValue;
-}
-</script>
+		<div id = "description">
+		</div>
+		<div id="preview">
+				<img id = '0' class = "preview normal" src="" alt="preview">
+				<p>
+					<img id = 'productImage1' class="thumb normal" onmouseover="preview(this)">
+					<img id = 'productImage2' class="thumb normal" onmouseover="preview(this)">
+					<img id = 'productImage3' class="thumb normal" onmouseover="preview(this)">
+				</p>
+		
+			</div>
+	</div>
+
+
 </div>
 </section>
   
@@ -62,7 +72,20 @@ function showValue(newValue)
     </div>
   </footer>
 
+  <script>
+      var lastImg = "productImage1"; //Set initial thumbnail and preview
+      document.getElementById(0).src = document.getElementById(lastImg).src;
+      document.getElementById(lastImg).className = "thumb selected";
 
+      function preview(img) {
+          document.getElementById(lastImg).className = "thumb normal";
+          img.className = "thumb selected";
+          document.getElementById(0).src = img.src;
+          lastImg = img.id;
+      }
+  </script>
+	<script src="js/products.js"></script>
+	<script src="js/game.js"></script>
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.js"></script>
 </body>
