@@ -31,10 +31,13 @@ function questionApp() {
     
     button.setAttribute("disabled", "disabled"); 
     if (currentQuestion === questionCount) {
+			roundScore(correctAnswer);
+			showTotal(total);
       finalScore();
     } 
 		else {
 			roundScore(correctAnswer);
+			showTotal(total);
       var qDiv = wrapper.lastChild;
       qDiv.className = "disappear";
       currentQuestion++;
@@ -50,6 +53,7 @@ function questionApp() {
     roundScore.setAttribute("id","rscore");
     roundScore.className = "appear";
     roundScoreText.innerHTML = "Item Price: $" + correctPrice + "<br>" +  "You earned " + score + " points!";
+		roundScore.className = "disappear";
 	}
 	
   function finalScore() {
