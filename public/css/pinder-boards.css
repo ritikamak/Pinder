@@ -266,7 +266,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #eeeeee;
   height: 300px;
   width: 600px;
-  margin-left: 19%;
+  display: block;
+  margin: auto;
   margin-top: -20px;
   border: solid 2px gray;
 }
