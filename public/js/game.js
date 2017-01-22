@@ -6,6 +6,7 @@ function questionApp() {
   var score = 0;
   var currentQuestion = 1;
   var questionCount = Questions.question.length;
+	var possibleTotal = questionCount * 20;
   var wrapper = document.getElementById("wrapper");
 
   
@@ -63,15 +64,16 @@ function questionApp() {
     finalScore.appendChild(finalScoreText);
     finalScore.setAttribute("id","score");
     finalScore.className = "appear";
-    finalScoreText.innerHTML = "You earned " + total + " points total!";
-    
+    finalScoreText.innerHTML = "You earned " + total + "/" + possibleTotal + " points!";
+		var path = window.location.pathname;
+		var page = path.split("/").pop();
     var resetButton = document.createElement("button");
     finalScore.appendChild(resetButton);
     var resetLabel = document.createTextNode("Continue");
     resetButton.appendChild(resetLabel);
     resetButton.setAttribute("id","reset")
     resetButton.addEventListener('click', function(){
-			location.href = "";
+			location.href = "ranking-" + page;
 		}, false);
   }
   
