@@ -88,24 +88,11 @@ body {
 }
 
 .preview {
+border:3px solid #ccc;
 width: 250px;
 height: 250px
 }
 
-.thumb {
-width: 50px;
-height: 50px;
-margin-right:3px;
-margin-top: 5px;
-}
-
-.normal {
-border:3px solid #70bf83;
-}
-
-.selected {
-border:3px solid #fcdc3c;
-}
 
 
 /* || animations */
@@ -167,7 +154,7 @@ html {
 #wrapper {
   background-color: white;
   width: 500px;
-	height: 700px;
+	min-height: 800px;
 		padding: 15px 15px;
 		margin: 10px auto;
 		position: relative;
@@ -199,7 +186,7 @@ html {
 	position: absolute;
 	left: 50%;
 	margin-left: -250px;
-	top: 400px;
+	top: 350px;
 	width: 500px;
 	height: 200px;
 	padding-top: 0px;
@@ -239,6 +226,7 @@ h1 {
 	font-family:'Lato', sans-serif;
   text-align: left;
 	margin-left: 10px;
+	margin-bottom: 0px;
   font-size: 4rem;
   padding: 12rem 0 0 1rem;
 }
