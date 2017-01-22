@@ -1,6 +1,6 @@
 var Questions = { "question" : [
   {
-    "question"  : "jacket",
+    "question"  : "denim",
 		"itemName"  : "Denim Moto Jacket",
      "choice0"  : "$0",
      "choice1"  : "$10",
@@ -8,11 +8,11 @@ var Questions = { "question" : [
      "choice3"  : "$30",
      "choice4"  : "$40",   
 	 "choice5"  : "$50",                  
-     "correct"  : 39.97,
+     "correct"  : 29.97,
 	 "description" : "Faded denim gives a jean jacket the look of a well-worn favorite. Adjustable button tabs at the hem enhance the fit. Straight silhouette with a tailored fit. Hits at the hip."
   },
   {
-    "question"  : "denim",
+    "question"  : "jacket",
 		"itemName"	: "Utility Wrap Jacket",
      "choice0"  : "$0",
      "choice1"  : "$10",
@@ -20,7 +20,7 @@ var Questions = { "question" : [
      "choice3"  : "$30",
      "choice4"  : "$40",   
 	 	"choice5"  : "$50",                  
-     "correct"  : 29.97,
+     "correct"  : 39.97,
 	  "description" : "A utility jacket featuring a denim body, an adjustable inner drawstring waist, and optional roll-cuff sleeves. Straight silhouette with a relaxed, easy fit. Hits at the waist."
   },
   {
