@@ -63,7 +63,7 @@ function questionApp() {
     
     var resetButton = document.createElement("button");
     finalScore.appendChild(resetButton);
-    var resetLabel = document.createTextNode("Try again");
+    var resetLabel = document.createTextNode("Continue");
     resetButton.appendChild(resetLabel);
     resetButton.setAttribute("id","reset")
     resetButton.addEventListener('click', function(){
