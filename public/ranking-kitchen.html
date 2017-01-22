@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content=""><link rel="stylesheet" href="css/gamepage.css" type="text/css" media="screen">
+  <title>Pinder</title>
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="css/pinder-boards.css" rel="stylesheet">
+  <link href="css/gamepage.css" rel="stylesheet">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+</head>
+<body>
+
+
+  <!-- Navigation -->
+  <div id="container1">
+    <div id="score"><p id = "qty">0</p></div>
+    <a id="shoppingcart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+    <a id="logo" href="pinder-main.html">Pinder</a>
+  </div>
+
+  <!-- Ranking Section -->
+  <section id="team" class="bg-light-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">THANK YOU FOR PLAYING</h2>
+          <h3 class="section-subheading text-muted">Please take a moment to provide some feedback on the products you just viewed</h3>
+        </div>
+      </div>
+
+      <form id="entirePage" name="entireForm" onsubmit="return validateFullForm()">
+        <div class="row">
+          <fieldset id="fieldsetQ">
+              <div class="col-sm-4">
+                <div class="team-member">
+                  <a>
+                    <img src="img/game/processor1.png" class="img-responsive preview" alt="">
+                  </a>
+                  <h4>Cuisinart 4-Cup Mini-Prep Plus Food Processor<br>$49.95</h4><br>
+                  <h5>Rank:</h5>
+                    <select name="age1">
+                      <option value="18">Love it</option>
+                      <option value="19">Like it</option>
+                      <option value="20">Neutral</option>
+                      <option value="21">Leave it</option>
+                      <option value="22">Hate it</option>
+                    </select>
+                  <h5>Add To Cart:</h5>
+                    <select name="age2">
+                      <option value="18">Yes</option>
+                      <option value="19">No</option>
+                    </select>
+                  <h5>Any Additional Comments:</h5>
+                    <textarea name="about_self" rows="8" cols="50"></textarea><br>
+                </div>
+              </div>
+          </fieldset>
+          <fieldset id="fieldsetW">
+              <div class="col-sm-4">
+                <div class="team-member">
+                  <a>
+                    <img src="img/game/coffee1.png" class="img-responsive preview" alt="">
+                  </a>
+                  <h4>Capresso 5-Cup Coffee Maker<br>$39.95</h4><br>
+                  <h5>Rank:</h5>
+                    <select name="age1">
+                      <option value="18">Love it</option>
+                      <option value="19">Like it</option>
+                      <option value="20">Neutral</option>
+                      <option value="21">Leave it</option>
+                      <option value="22">Hate it</option>
+                    </select>
+                  <h5>Add To Cart:</h5>
+                    <select name="age2">
+                      <option value="18">Yes</option>
+                      <option value="19">No</option>
+                    </select>
+                  <h5>Any Additional Comments:</h5>
+                    <textarea name="about_self" rows="8" cols="50"></textarea><br>
+                </div>
+              </div>
+          </fieldset>
+          <fieldset id="fieldsetE">
+              <div class="col-sm-4">
+                <div class="team-member">
+                  <a>
+                    <img src="img/game/waffle1.png" class="img-responsive preview" alt="">
+                  </a>
+                  <h4>Croquade Traditional Waffle Plate<br>$29.99</h4><br>
+                  <h5>Rank:</h5>
+                    <select name="age1">
+                      <option value="18">Love it</option>
+                      <option value="19">Like it</option>
+                      <option value="20">Neutral</option>
+                      <option value="21">Leave it</option>
+                      <option value="22">Hate it</option>
+                    </select>
+                  <h5>Add To Cart:</h5>
+                    <select name="age2">
+                      <option value="18">Yes</option>
+                      <option value="19">No</option>
+                    </select>
+                  <h5>Any Additional Comments:</h5>
+                    <textarea name="about_self" rows="8" cols="50"></textarea><br>
+                </div>
+              </div>
+          </fieldset>
+          <fieldset id="fieldsetR">
+              <div class="col-sm-4">
+                <div class="team-member">
+                  <a>
+                    <img src="img/game/glass1.png" class="img-responsive preview" alt="">
+                  </a>
+                  <h4>Zwilling Espresso Glasses, Set of 2<br>$20.00</h4><br>
+                  <h5>Rank:</h5>
+                    <select name="age1">
+                      <option value="18">Love it</option>
+                      <option value="19">Like it</option>
+                      <option value="20">Neutral</option>
+                      <option value="21">Leave it</option>
+                      <option value="22">Hate it</option>
+                    </select>
+                  <h5>Add To Cart:</h5>
+                    <select name="age2">
+                      <option value="18">Yes</option>
+                      <option value="19">No</option>
+                    </select>
+                  <h5>Any Additional Comments:</h5>
+                    <textarea name="about_self" rows="8" cols="50"></textarea><br>
+                </div>
+              </div>
+          </fieldset>
+          <fieldset id="fieldsetT">
+              <div class="col-sm-4">
+                <div class="team-member">
+                  <a>
+                    <img src="img/game/cookiecutter1.png" class="img-responsive preview" alt="">
+                  </a>
+                  <h4>Wilton Easter Cookie Cutters, Set of 7<br>$10.00</h4><br>
+                  <h5>Rank:</h5>
+                    <select name="age1">
+                      <option value="18">Love it</option>
+                      <option value="19">Like it</option>
+                      <option value="20">Neutral</option>
+                      <option value="21">Leave it</option>
+                      <option value="22">Hate it</option>
+                    </select>
+                  <h5>Add To Cart:</h5>
+                    <select name="age2">
+                      <option value="18">Yes</option>
+                      <option value="19">No</option>
+                    </select>
+                  <h5>Any Additional Comments:</h5>
+                    <textarea name="about_self" rows="8" cols="50"></textarea><br>
+                </div>
+              </div>
+          </fieldset>
+        </div>
+        <input type="submit" value="Submit Form">
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 text-center">
+          <ul class="list-inline">
+            <li>
+              <a href="">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="">Terms of Use</a>
+            </li>
+          </ul>
+          <p class="text-muted">Copyright &copy; 2017 Pinder</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <!-- FIREBASE -->
+  <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+  <script>
+    var config = {
+      apiKey: "AIzaSyAzgDLUbaN731nHMPIGd96f7QSY5unzc5g",
+      authDomain: "she-innovates.firebaseapp.com",
+      databaseURL: "https://she-innovates.firebaseio.com",
+      storageBucket: "she-innovates.appspot.com",
+      messagingSenderId: "751801012241"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script>
+    function validateFullForm() {
+      window.location.href = "categories.html";
+      return false;
+    }
+  </script>
+</body>
+</html>
