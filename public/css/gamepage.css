@@ -88,6 +88,7 @@ body {
 }
 
 .preview {
+	margin-top: -50px;
 border:3px solid #ccc;
 width: 250px;
 height: 250px
@@ -159,7 +160,7 @@ html {
   background-color: #eeeeee;
   /*background: transparent;*/
   width: 500px;
-  height: 700px;
+  height: 650px;
   margin: 0 auto;
   position: relative;
 }
@@ -184,7 +185,7 @@ html {
   position: absolute;
   left: 50%;
   margin-left: -250px;
-  top: 400px;
+  top: 350px;
   width: 500px;
   height: 200px;
   padding-top: 0px;
