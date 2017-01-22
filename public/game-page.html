@@ -12,6 +12,7 @@
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="css/pinder-boards.css" rel="stylesheet">
 	<link href="css/gamepage.css" rel="stylesheet">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
 </head>
 <body>
@@ -28,25 +29,21 @@
   <!-- Game -->
   <section id="back" class="bg-light-gray">
         
-    <div id = "item-image">
+<div id = "item-image">
       <!-- <img src = " "/> -->
-    <div id = "description">
-    </div>
+			<div id = "description"></div>
 		
-	<div id="wrapper">
+			<div id="wrapper">
 
-		
+	  		<h1 id="header">is the price right?</h1>
 
-	  <h1 id="header">is the price right?</h1>
-
-		<div id = "description">
-		</div>
-		<div id="preview">
-				<img id = '0' class = "preview normal" src="" alt="preview">
-				<p>
-					<img id = 'productImage1' class="thumb normal" onmouseover="preview(this)">
-					<img id = 'productImage2' class="thumb normal" onmouseover="preview(this)">
-					<img id = 'productImage3' class="thumb normal" onmouseover="preview(this)">
+				<div id = "description"></div>
+				<div id="preview">
+					<img id = '0' class = "preview normal" src="" alt="preview">
+					<p>
+						<img id = 'productImage1' class="thumb normal" onmouseover="preview(this)">
+						<img id = 'productImage2' class="thumb normal" onmouseover="preview(this)">
+						<img id = 'productImage3' class="thumb normal" onmouseover="preview(this)">
 				</p>
 		
 			</div>
@@ -72,21 +69,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- FIREBASE -->
-
-<script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBd29ETHSAjpr43HjlDXLqt0leQJLK9Dfg",
-    authDomain: "pinder-1288b.firebaseapp.com",
-    databaseURL: "https://pinder-1288b.firebaseio.com",
-    storageBucket: "pinder-1288b.appspot.com",
-    messagingSenderId: "648120936098"
-  };
-  firebase.initializeApp(config);
-</script>
 
   <script>
       var lastImg = "productImage1"; //Set initial thumbnail and preview
