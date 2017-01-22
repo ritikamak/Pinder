@@ -59,11 +59,26 @@ a:hover, a:focus, a:active, a.active {
 }
 #logo {
   font-family: Rez;
-  font-size: 18px;
+  font-size: 21px;
   color: #45FEAE;
   float: left;
   margin-left: 20px;
   margin-top: 20px;
+}
+#shoppingcart {
+  color: #45FEAE;
+  font-size: 18px;
+  float: right;
+  margin-right: 20px;
+  margin-top: 22px;
+}
+#logo:hover, #logo:focus, #logo:active, #logo.active {
+  outline: none;
+  color: white;
+}
+#shoppingcart:hover, #shoppingcart:focus, #shoppingcart:active, #shoppingcart.active {
+  outline: none;
+  color: white;
 }
 #score {
   height: 30px;
@@ -76,8 +91,7 @@ a:hover, a:focus, a:active, a.active {
 }
 #qty {
   border: none;
-  margin-top: 5.5px;
-  margin-left: -20px;
+  margin-top: 7px;
   width: 70px;
   font-weight: 700;
 }

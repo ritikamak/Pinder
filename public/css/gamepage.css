@@ -198,6 +198,13 @@ html {
 	text-align: left;
 }
 
+#price {
+  position: absolute; 
+  margin-left: -150px; 
+  font-size: 14px;
+  color: #2A2626;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 	  
 #wrapper #score {
 	top: 30%;
