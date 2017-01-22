@@ -1,6 +1,15 @@
+var config = {
+  apiKey: "AIzaSyAzgDLUbaN731nHMPIGd96f7QSY5unzc5g",
+  authDomain: "she-innovates.firebaseapp.com",
+  databaseURL: "https://she-innovates.firebaseio.com",
+  storageBucket: "she-innovates.appspot.com",
+  messagingSenderId: "751801012241"
+};
+
+firebase.initializeApp(config);
 
 function toLogin() {
-  console.log("lol sorry");
+    console.log("lol sorry");
 	var provider = new firebase.auth.GoogleAuthProvider();
 	firebase.auth().signInWithPopup(provider).then(function(result) {
   	// This gives you a Google Access Token. You can use it to access the Google API.
@@ -19,7 +28,7 @@ function toLogin() {
 	});
 }
 
-Pinder.prototype.onAuthStateChanged = function(user) {
+firebase.auth().onAuthStateChanged = function(user) {
   console.log(user);
   if (user) { // User is signed in!
     // Get profile pic and user's name from the Firebase user object.
@@ -27,4 +36,3 @@ Pinder.prototype.onAuthStateChanged = function(user) {
     var userName = user.displayName;
 	}
 }
-
