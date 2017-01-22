@@ -1,5 +1,6 @@
 questionApp();
 document.getElementById("header").className = "appear";
+document.getElementById("price").className = "appear";
 function questionApp() {
   var score = 0;
   var currentQuestion = 1;
@@ -99,8 +100,10 @@ function questionApp() {
 
 
     questionDiv.className = "appear";
+		document.getElementById("price").className = "appear";
 		document.getElementById("preview").className = "appear";
 		document.getElementById("description").className = "appear";
+		document.getElementById("price").style.display = '';
 		document.getElementById("preview").style.display = '';
 		document.getElementById("description").style.display = '';
         
@@ -108,9 +111,9 @@ function questionApp() {
 		var radios = document.getElementsByName('price');
 		
     button.addEventListener('click', function(){
-
 			checkAnswer(selectedQuestion, priceGuess.value, currentButton);
 			}, false);
+			document.getElementById("range").innerHTML="10";
   	}
   
   generateQuestion();
