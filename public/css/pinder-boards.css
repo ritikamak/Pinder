@@ -219,6 +219,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-align: center;
 }
+.header .text-vertical-center h5 {
+  font-weight: 500;
+  color: #2A2626;
+  font-size: 30px;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+}
 .header .intro-h3 {
   margin-top: -150px;
   font-weight: 500;
@@ -303,6 +310,11 @@ fieldset {
   margin-top: 25px;
   margin-bottom: 0;
   color: #767676;
+}
+.team-member h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #2A2626;
 }
 .team-member p {
   margin-top: 0;
