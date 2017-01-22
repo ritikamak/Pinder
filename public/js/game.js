@@ -8,10 +8,8 @@ function questionApp() {
 
   
   function checkAnswer(question, userAnswer, button) {
-    var answer = userAnswer.split("").splice(6, 2).join("");
-    var priceGuess = answer * 10;
     var correctAnswer = question.correct;
-		var difference = Math.abs(correctAnswer - priceGuess);
+		var difference = Math.abs(correctAnswer - userAnswer);
     if(difference <= 5) {
       score += 20;
     } 
@@ -63,8 +61,7 @@ function questionApp() {
   }
 	
 	function showValue(newValue) {
-		document.getElementById("priceGuess").value = newValue;
-		document.getElementById("sliderValue").innerHTML = newValue;
+		document.getElementById('priceGuess').value = newValue;
 	}
   
   function generateQuestion() {
@@ -73,24 +70,17 @@ function questionApp() {
 		document.getElementById('description').innerHTML = "<h1>" + selectedQuestion.question + "</h1><p>" + selectedQuestion.description + "</p></div>";
     var questionDiv = document.createElement("div");
 
-		var slider = document.createElement("div");
-		slider.innerHTML = "<div class='sliderthumb id='sliderthumb1'></div>";
     var priceGuess = document.createElement("input");
 		priceGuess.setAttribute("type", "range");
 		priceGuess.setAttribute("min", "0");
 		priceGuess.setAttribute("max", "50");
 		priceGuess.setAttribute("value", "10");
 		priceGuess.setAttribute("step", "5");
-		priceGuess.setAttribute("oninput", "showValue(this.value)");
-		
-		var sliderValue = document.createElement("span");
-		priceGuess.appendChild(sliderValue);
+		priceGuess.setAttribute("onchange", "showValue(this.value)");
     
     wrapper.appendChild(questionDiv);
-		questionDiv.appendChild(slider);
-		slider.appendChild(priceGuess);
+		questionDiv.appendChild(priceGuess);
 
-    questionDiv.appendChild(priceGuess);
     var image1 = document.getElementById('productImage1');
 		image1.setAttribute('src', "img/game/" + selectedQuestion.question + "1.jpg");
     var image2 = document.getElementById('productImage2');
@@ -102,8 +92,12 @@ function questionApp() {
     
     var button = document.createElement("button");
     questionDiv.appendChild(button);
-    var label = document.createTextNode("Guess the price!");
-    button.appendChild(label);
+    var label = document.createTextNode(" Guess");
+		var icon = document.createElement("i");
+		icon.setAttribute("class", "fa fa-money");
+		icon.setAttribute("aria-hidden", "true");
+		icon.appendChild(label);
+    button.appendChild(icon);
     button.setAttribute("id", "button" + currentQuestion);
 		
 		var modal = document.getElementById('productInfo');
@@ -128,3 +122,4 @@ function questionApp() {
   
   
 }
+
