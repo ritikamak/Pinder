@@ -55,6 +55,7 @@ a:hover, a:focus, a:active, a.active {
   margin-top: -10px;
   position: fixed;
   left: 0px;
+  z-index: 99;
 }
 #logo {
   font-family: Rez;
