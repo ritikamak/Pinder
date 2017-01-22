@@ -21,6 +21,7 @@
   <!-- Navigation -->
   <div id="container1">
     <div id="score"><p id = "qty">0</p></div>
+		<a id="shoppingcart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
     <a id="logo" href="pinder-main.html">Pinder</a>
   </div>
 
@@ -69,6 +70,12 @@
  	 document.getElementById("range").innerHTML=newValue;
 	}
 </script>
+		<script type="text/javascript">
+		function showTotal(newValue)
+		{
+	 	 document.getElementById("qty").innerHTML=newValue;
+		}
+	</script>
 	<script src="js/kitchen.js"></script>
 	<script src="js/game.js"></script>
 			<script>
