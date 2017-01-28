@@ -1,6 +1,6 @@
 # pinder-application
-## (pinder-1288b.firebaseapp.com)
 A mobile and web app that collects user information about products through an engaging game experience.
+(pinder-1288b.firebaseapp.com)
 ### What it does
 Players choose categories of real products based on their personal interests and are asked to guess the price of each item. They are awarded points based on how close their estimate was to the actual price which in the end of the session can be used to acquire product discounts. After the game they are asked to rate each item on a scale of love it to hate it and are able to provide feedback and add items to their cart for purchase. Pinder works because it combines incentive with personal interest while at the same time helping companies collect needed information.
 ### How we built it
@@ -13,10 +13,10 @@ We used a bare bones bootstrap template to help us get started. In developing ou
 * Bootstrap
 ### Runs on the following devices:
 * Desktop/Laptop
-⋅⋅* MacOSX or Windows
-⋅⋅* Browser
-⋅⋅⋅⋅* Chrome
-⋅⋅⋅⋅* Firefox
-⋅⋅⋅⋅* IE11
+  * MacOSX or Windows
+  * Browser
+    * Chrome
+    * Firefox
+    * IE11
 * Mobile
-⋅⋅* iPhone, Android
+  * iPhone, Android
